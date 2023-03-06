@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Home.swift
 //  AnimeDetails
 //
 //  Created by Sayor Debbarma on 06/03/23.
@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Home: View {
     var body: some View {
-        Home()
-            //.preferredColorScheme(.light)
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Home_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
