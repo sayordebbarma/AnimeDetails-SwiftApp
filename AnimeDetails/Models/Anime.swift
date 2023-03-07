@@ -8,18 +8,20 @@
 import SwiftUI
 
 // Anime model
-struct Book: Identifiable, Hashable{
+struct Anime: Identifiable, Hashable{
     var id: String = UUID().uuidString
     var title: String
     var imageName: String
-    var author: String
+    var episodes: Int
+    var Status: String
     var rating: Int
-    var bookViews: Int
+    var totalViews: Int
 }
-var sampleBooks: [Book] = [
-    .init(title: "Naruto", imageName: "naruto", author: "Rachael Lippincott", rating: 4, bookViews: 1023),
-    .init(title: "One Piece", imageName: "onePiece", author: "William B. Irvine", rating: 5, bookViews: 2049),
-    .init(title:"Haikyuu", imageName: "haikyuu", author: "Anne", rating: 4, bookViews: 920),
-    .init(title: "Blue Lock", imageName: "blueLock", author: "William Lippincott", rating: 3, bookViews: 560),
-    .init(title: "Demon Slayer", imageName:"demonSlayer", author: "Jenna Lippincott", rating: 5, bookViews: 240),
+var sampleAnimes: [Anime] = [
+    .init(title: "Naruto: Shippuden", imageName: "naruto", episodes: 500, Status: "Completed", rating: 5, totalViews: 102334234),
+    .init(title: "One Piece", imageName: "onePiece", episodes: 1053, Status: "Airing", rating: 5, totalViews: 20494234),
+    .init(title:"Haikyuu", imageName: "haikyuu", episodes: 25, Status: "Completed", rating: 4, totalViews: 920343),
+    .init(title: "Blue Lock", imageName: "blueLock", episodes: 21, Status: "Airing", rating: 3, totalViews: 56034323),
+    .init(title: "Demon Slayer", imageName:"demonSlayer", episodes: 26, Status: "Completed", rating: 5, totalViews: 243230),
+    .init(title: "My Hero Academia", imageName:"MyHeroAcademia", episodes: 13, Status: "Completed", rating: 5, totalViews: 24320),
 ]
